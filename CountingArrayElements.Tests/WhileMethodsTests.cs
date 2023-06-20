@@ -98,7 +98,6 @@ namespace CountingArrayElements.Tests
         }
 
         [TestCaseSource(nameof(GetNullObjectCountData))]
-        [SuppressMessage("Design", "CA1062:Validate arguments of public methods", Justification = "data parameter should not be null.")]
         public void GetNullObjectCount_ParametersAreValid_ReturnsResult(object[] data)
         {
             // Arrange
@@ -120,7 +119,6 @@ namespace CountingArrayElements.Tests
         }
 
         [TestCaseSource(nameof(GetNullObjectCountData))]
-        [SuppressMessage("Design", "CA1062:Validate arguments of public methods", Justification = "data parameter should not be null.")]
         public void GetNullObjectCountRecursive_ParametersAreValid_ReturnsResult(object[] data)
         {
             // Arrange
